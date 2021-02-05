@@ -19,7 +19,7 @@ h2 {
   margin-bottom: 40px;
 }
 
-.maintext {
+#maintext {
   width: 700px;
   border: 1px solid #a4bfa6;
   padding: 10px;
@@ -51,41 +51,41 @@ iframe {
   margin-top: 30px;
 }
 
-a:link {
+#maintext a:link {
   color: #556356;
   text-decoration: none;
 }
 
-a:visited {
+#maintext a:visited {
   color: #556356;
   text-decoration: none;
 }
 
-a:hover {
+#maintext a:hover {
   color: #728a74;
   text-decoration: none;
 }
 
-a:active {
+#maintext a:active {
   color: #556356;
   text-decoration: none;
 }
 
 #web-ring {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    padding: 15px;
-    background-color: rgb(52, 86, 228);
-    border: solid 2px white;
-    font-family: sans-serif;
-  }
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 15px;
+  background-color: rgb(52, 86, 228);
+  border: solid 2px white;
+  font-family: sans-serif;
+}
 
-  #web-ring a:link {
-    color: white;
-    text-decoration: none;
-  }
+#web-ring a:link {
+  color: white;
+  text-decoration: none;
+}
 
-  #web-ring a:hover {
-    text-decoration: underline;
-  }
+#web-ring a:hover {
+  text-decoration: underline;
+}

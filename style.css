@@ -43,6 +43,10 @@ details {
   margin-top: 40px;
 }
 
+details:hover {
+  cursor: pointer;
+}
+
 .workpics {
   width: 600px;
   height: auto;

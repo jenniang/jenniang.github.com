@@ -105,6 +105,13 @@ img {
   line-height: 1.7;
 }
 
+.reference {
+  columns: 3;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 100px;
+}
+
 .maintext a:link {
   color: #2b2b2b;
 }
@@ -120,6 +127,8 @@ img {
 .maintext a:active {
   color: #ff7575;
 }
+
+
 
 /* .tableofcontents {
   margin-left: 5%;

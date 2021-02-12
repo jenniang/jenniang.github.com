@@ -14,11 +14,11 @@ body {
 
 .navbar a {
   display: block;
+  color: #db4040;
   font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 25px;
-  color: #db4040;
   text-decoration: none;
 }
 

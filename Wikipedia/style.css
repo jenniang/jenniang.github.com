@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 1px solid #2b2b2b;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 25px;
+}
+
+.navbar a {
+  display: block;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+  color: #db4040;
+  text-decoration: none;
+}
+
+.lefttext {
+  float: left;
+}
+
+.righttext {
+  float: right;
+  margin-right: 50px;
+}
+
+.navbar:hover {
+  background: #2b2b2b;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar a:hover {
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.intro {
+ float: right;
+ font-family: neue-haas-grotesk-text, sans-serif;
+ font-weight: 500;
+ font-style: normal;
+ font-size: 75px;
+ color: #db4040;
+ text-align: right;
+ margin-top: 120px;
+ margin-right: 5%;
+ margin-left: 10%;
+ margin-bottom: 200px;
+}
+
+.intro a:link {
+  color: #db4040;
+}
+
+.intro a:visited {
+  color: #db4040;
+}
+
+.intro a:hover {
+  color: #2b2b2b;
+}
+
+.intro a:active {
+  color: #ff7575;
+}
+
+.images {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-left: 5%;
+  line-height: 1.5;
+}
+
+
+img {
+  margin-top: 50px;
+}
+
+.maintext h2 {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+  color: #db4040;
+}
+
+.maintext {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: 15%;
+  margin-left: 15%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  line-height: 1.7;
+}
+
+a:link {
+  color: #2b2b2b;
+}
+
+a:visited {
+  color: #2b2b2b;
+}
+
+a:hover {
+  color: #db4040;
+}
+
+a:active {
+  color: #ff7575;
+}
+
+/* .tableofcontents {
+  margin-left: 5%;
+  margin-top: 200px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tableofcontents h2 {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+  color: #db4040;
+  text-align: left;
+}
+
+ul li {
+  list-style-type: none;
+  text-align: left;
+} */

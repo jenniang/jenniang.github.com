@@ -1,0 +1,214 @@
+/* PAGE 1 */
+
+body#page1 {
+  background-color: #24252d;
+}
+
+.maintitle {
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #383A44;
+  font-size: 20em;
+  line-height: 0.8;
+}
+
+.subtitle {
+  font-family: filosofia, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  color: #D9D3D3;
+  border-bottom: 2px solid #D9D3D3;
+  padding: 20px;
+  margin-top: 120px;
+}
+
+.arrow1 {
+  float: right;
+}
+
+/* PAGE 2 */
+
+body#page2 {
+  background: rgb(35,37,45);
+  background: linear-gradient(0deg, rgba(35,37,45,1) 0%, rgba(204,202,203,1) 100%);
+  margin: 10%;
+}
+
+#page2 .bodytext {
+  color: #818A89;
+  text-align: center;
+}
+
+.arrow2 {
+  text-align: center;
+}
+
+#page2 p {
+  margin-bottom: 150vh;
+}
+
+.p2p1 {
+  color: #8ca19c;
+}
+
+.p2p2 {
+  color: #74827f;
+}
+
+.p2p3 {
+  color: #879995;
+}
+
+/* PAGE 3 */
+
+body#page3 {
+  background: #24252D;
+  margin: 10%;
+}
+
+#page3 .bodytext {
+  color: #818A89;
+}
+
+#page3 p {
+  margin-bottom: 30vh;
+  line-height: 1.5;
+}
+
+#page3 h1 {
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #383A44;
+  font-size: 8em;
+  line-height: 0.7;
+}
+
+.p3p1 {
+  text-align: left;
+}
+
+.p3p2 {
+  text-align: left;
+}
+
+.p3p3 {
+  text-align: left;
+}
+
+/* PAGE 4 */
+
+body#page4 {
+  background: #24252D;
+  margin: 10%;
+}
+
+#page4 .bodytext {
+  color: #818A89;
+  text-align: center;
+}
+
+/* PAGE 5 */
+
+body#page5 {
+  background: #24252D;
+}
+
+#page5 .bodytext {
+  color: #818A89;
+  text-align: center;
+  margin: 10%;
+}
+
+#page5 h1 {
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #383A44;
+  font-size: 16em;
+  line-height: 0.7;
+  margin-top: 0;
+}
+
+/* PAGE 6 */
+
+body#page6 {
+  background: #24252D;
+  margin: 10%;
+}
+
+#page6 .bodytext {
+  color: #818A89;
+  text-align: center;
+}
+
+/* PAGE 7 */
+
+body#page7 {
+  background: #24252D;
+  margin: 10%;
+}
+
+#page7 .bodytext {
+  color: #818A89;
+  text-align: center;
+}
+
+/* PAGE 8 */
+
+body#page8 {
+  background: #24252D;
+  margin: 10%;
+}
+
+#page8 .bodytext {
+  color: #818A89;
+  text-align: center;
+}
+
+/* ALL PAGES */
+
+body {
+  animation-name: pagefade;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes pagefade {
+  0% { opacity: 0%; }
+  100% { opacity: 100%; }
+}
+
+.bodytext {
+  font-family: filosofia, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+}
+
+a:link {
+  color: #D9D3D3;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #D9D3D3;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #383A44;
+  text-decoration: none;
+}
+
+a:active {
+  color: #D9D3D3;
+  text-decoration: none;
+}
+
+#page2 p:hover {
+  color: #23252D;
+  transition: 1s;
+}

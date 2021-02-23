@@ -28,24 +28,11 @@ body#page1 {
 @media only screen and (max-width: 900px) {
 
   .maintitle {
-    font-family: mr-eaves-modern, sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    color: #383A44;
-    font-size: 4em;
-    line-height: 0.8;
+    font-size: 15vw;
   }
 
   .subtitle {
-    font-family: filosofia, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1em;
-    color: #D9D3D3;
-    border-bottom: 2px solid #D9D3D3;
-    padding: 20px;
-    margin-top: 120px;
-    max-width: 75%;
+    font-size: 4vw;
   }
 }
 
@@ -103,7 +90,7 @@ body#page3 {
 }
 
 #page3 p {
-  margin-bottom: 30vh;
+  margin-bottom: 10vh;
   line-height: 1.5;
 }
 
@@ -124,6 +111,50 @@ body#page3 {
   font-size: 8em;
   line-height: 0.7;
 }
+
+@media only screen and (max-width: 900px) {
+
+  #page3 h1 {
+    font-size: 6.5em;
+    animation-name: lightroom;
+    animation-duration: 8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes lightroom {
+    0% {
+      color: #383A44;
+    }
+    50% {
+      color: #e6e9ed;
+    }
+    100% {
+      color: #383A44;
+    }
+  }
+
+  #page3 h2 {
+    font-size: 6.5em;
+    animation-name: darkroom;
+    animation-duration: 8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes darkroom {
+    0% {
+      color: #383A44;
+    }
+    50% {
+      color: #1a1a1a;
+    }
+    100% {
+      color: #383A44;
+    }
+  }
+}
+
 
 #page3 h1:hover {
   color: #e6e9ed;
@@ -174,6 +205,10 @@ body#page4 {
   }
 }
 
+#page4 p {
+  margin-bottom: 10vh;
+  line-height: 1.8;
+}
 
 #page4 .bodytext {
   color: #818A89;
@@ -185,6 +220,11 @@ body#page4 {
 
 body#page5 {
   background: #24252D;
+}
+
+#page5 p {
+  margin-top: 10vh;
+  line-height: 1.8;
 }
 
 #page5 .bodytext {
@@ -202,13 +242,46 @@ body#page5 {
   font-size: 16em;
   line-height: 0.7;
   margin-top: 0;
+  margin-bottom: 25%;
+}
+
+@media only screen and (max-width: 1305px) {
+  #page5 h1 {
+    font-size: 13em;
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  #page5 h1 {
+    font-size: 10em;
+  }
+}
+
+@media only screen and (max-width: 705px) {
+  #page5 h1 {
+    font-size: 8em;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  #page5 h1 {
+    font-size: 6em;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  #page5 h1 {
+    font-size: 5em;
+  }
 }
 
 /* PAGE 6 */
 
 body#page6 {
   background: #24252D;
-  margin: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
 }
 
 
@@ -223,17 +296,15 @@ body#page6 {
   font-style: italic;
   color: #383A44;
   font-size: 6em;
-  line-height: 0.7;
+  line-height: 0.8;
+  text-align: center;
 }
 
-#page6 h2 {
+#page6 .lumin {
   font-family: mr-eaves-modern, sans-serif;
   font-weight: 400;
   font-style: italic;
   color: #383A44;
-  font-size: 6em;
-  line-height: 0;
-  margin-top: -40px;
   animation-name: lumin;
   animation-duration: 8s;
   animation-timing-function: ease-out;
@@ -252,6 +323,19 @@ body#page6 {
     color: #383A44;
   }
 }
+
+@media only screen and (max-width: 1140px) {
+  #page6 h1 {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #page6 h1 {
+    font-size: 3em;
+  }
+}
+
 
 /* PAGE 7 */
 
@@ -274,6 +358,44 @@ body#page7 {
   line-height: 0.7;
 }
 
+#page7 h2 {
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #383A44;
+  font-size: 4em;
+  line-height: 0.7;
+}
+
+#page7 h1 {
+  animation-name: glow;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes glow {
+  0% {
+    color: #383A44;
+  }
+  10% {
+    color: #d4d4d4;
+  }
+  20% {
+    color: #383A44;
+  }
+  25% {
+    color: #d4d4d4;
+  }
+  40% {
+    color: #383A44;
+  }
+  50% {
+    color: #d4d4d4;
+  }
+}
+
 /* PAGE 8 */
 
 body#page8 {
@@ -284,6 +406,15 @@ body#page8 {
 #page8 .bodytext {
   color: #818A89;
   text-align: center;
+  line-height: 1.4;
+}
+
+#page8 h2 {
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #383A44;
+  font-size: 2em;
 }
 
 /* ALL PAGES */
@@ -304,6 +435,19 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 2em;
+}
+
+.arrow {
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .bodytext {
+    font-size: 1.2em;
+  }
+
+
 }
 
 a:link {

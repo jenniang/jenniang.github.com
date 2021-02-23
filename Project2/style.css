@@ -39,7 +39,7 @@ body#page1 {
 @media only screen and (max-width: 750px) {
 
   .subtitle {
-    margin-top: 60%;
+    margin-top: 50vh;
   }
 }
 

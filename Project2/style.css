@@ -439,6 +439,7 @@ body {
 
 .arrow {
   font-size: 1.5em;
+  margin-bottom: 25vh;
 }
 
 @media only screen and (max-width: 900px) {

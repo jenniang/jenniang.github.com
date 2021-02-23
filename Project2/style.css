@@ -186,14 +186,64 @@ body#page3 {
 
 body#page4 {
   margin: 10%;
-  animation-name: fade;
-  animation-duration: 20s;
-  animation-timing-function: ease;
-  animation-play-state: running;
-  animation-iteration-count: infinite;
+  background: #24252D;
 }
 
-@keyframes fade {
+@keyframes glow {
+  0% { background: rgba(136, 106, 55, 0.05)}
+  50% { background: rgba(223, 185, 69, 0.85)}
+  100% { background: rgba(136, 106, 55, 0.05)}
+}
+
+@keyframes bug1 {
+  0% { left: 40%; top: 10%; }
+  50% { left: 40%; top: 90%; }
+  100% { left: 40%; top: 10%; }
+}
+
+.firefly {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 50%;
+  filter: blur(8px);
+}
+
+@media only screen and (max-width: 900px) {
+
+  .firefly {
+    width: 14rem;
+    height: 14rem;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+
+  .firefly {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+
+.firefly:hover {
+  animation-play-state: running, paused;
+  cursor: grabbing;
+}
+
+.firefly:nth-child(1) {
+  left: 40%;
+  top: 10%;
+  animation-name: glow, bug1;
+  animation-duration: 4s, 18s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-delay: 2.5s;
+}
+
+
+/* @keyframes fade {
   0% {
     background-color: #24252D;
   }
@@ -203,7 +253,7 @@ body#page4 {
   100% {
     background-color: #24252D;
   }
-}
+} */
 
 #page4 p {
   margin-bottom: 10vh;

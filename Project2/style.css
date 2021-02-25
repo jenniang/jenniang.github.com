@@ -62,7 +62,7 @@ body#page2 {
 
 #page2 p:hover {
   color: #23252D;
-  transition: 1s;
+  transition: 2s;
 }
 
 .arrow2 {
@@ -122,7 +122,7 @@ body#page3 {
 @media only screen and (max-width: 900px) {
 
   #page3 h1 {
-    font-size: 6.5em;
+    font-size: 5.2em;
     animation-name: lightroom;
     animation-duration: 8s;
     animation-timing-function: ease-out;
@@ -142,7 +142,7 @@ body#page3 {
   }
 
   #page3 h2 {
-    font-size: 6.5em;
+    font-size: 5.2em;
     animation-name: darkroom;
     animation-duration: 8s;
     animation-timing-function: ease-out;
@@ -196,23 +196,23 @@ body#page4 {
   background: #24252D;
 }
 
-@keyframes glow {
-  0% { background: rgba(136, 106, 55, 0.05)}
-  50% { background: rgba(223, 185, 69, 0.85)}
-  100% { background: rgba(136, 106, 55, 0.05)}
+@keyframes glowbug {
+  0% { background: rgba(255, 255, 255, 0.01)}
+  50% { background: rgba(255, 255, 255, 0.05)}
+  100% { background: rgba(255, 255, 255, 0.01)}
 }
 
 @keyframes bug1 {
-  0% { left: 40%; top: 10%; }
-  50% { left: 40%; top: 90%; }
-  100% { left: 40%; top: 10%; }
+  0% { left: 40%; top: 5%; }
+  50% { left: 40%; top: 95%; }
+  100% { left: 40%; top: 5%; }
 }
 
 .firefly {
   position: absolute;
   width: 20rem;
   height: 20rem;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(36, 37, 45, 0.01);
   border-radius: 50%;
   filter: blur(8px);
 }
@@ -241,13 +241,14 @@ body#page4 {
 
 .firefly:nth-child(1) {
   left: 40%;
-  top: 10%;
-  animation-name: glow, bug1;
+  top: 5%;
+  animation-name: glowbug, bug1;
   animation-duration: 4s, 18s;
   animation-timing-function: ease-in-out, ease-in-out;
   animation-iteration-count: infinite, infinite;
-  animation-delay: 2.5s;
+  animation-delay: 0s;
 }
+
 
 
 /* @keyframes fade {
@@ -273,6 +274,48 @@ body#page4 {
   line-height: 2;
 }
 
+#page4 mark {
+  background: none;
+  color: #e6e9ed;
+}
+
+#page4 mark:hover {
+  color: #e6e9ed;
+  transition: 2s;
+  animation-name: lightray;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  #page4 mark {
+    animation: lightray 10s infinite;
+    opacity: 80%;
+  }
+}
+
+
+
+@keyframes lightray {
+	0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8a9190, 0 0 40px #8a9190, 0 0 50px #8a9190, 0 0 60px #8a9190, 0 0 70px #8a9190;
+  }
+  25% {
+    text-shadow: 0 0 20px #fff, 0 0 30px #b2b8b7, 0 0 40px #b2b8b7, 0 0 50px #b2b8b7, 0 0 60px #b2b8b7, 0 0 70px #b2b8b7, 0 0 80px #b2b8b7;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8a9190, 0 0 40px #8a9190, 0 0 50px #8a9190, 0 0 60px #8a9190, 0 0 70px #8a9190;
+  }
+  75% {
+    text-shadow: 0 0 20px #fff, 0 0 30px #b2b8b7, 0 0 40px #b2b8b7, 0 0 50px #b2b8b7, 0 0 60px #b2b8b7, 0 0 70px #b2b8b7, 0 0 80px #b2b8b7;
+  }
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8a9190, 0 0 40px #8a9190, 0 0 50px #8a9190, 0 0 60px #8a9190, 0 0 70px #8a9190;
+  }
+}
+
 /* PAGE 5 */
 
 body#page5 {
@@ -289,6 +332,25 @@ body#page5 {
   text-align: center;
   margin: 10%;
   line-height: 1.3;
+}
+
+#page5 mark {
+  background: none;
+  color: #818A89;
+}
+
+@media only screen and (min-width: 800px) {
+
+  #page5 mark {
+    color: black;
+  }
+
+  #page5 mark:hover {
+    text-transform: uppercase;
+    color: #e6e9ed;
+    transition: 2s;
+  }
+
 }
 
 #page5 h1 {
@@ -363,7 +425,7 @@ body#page6 {
   font-style: italic;
   color: #383A44;
   animation-name: lumin;
-  animation-duration: 8s;
+  animation-duration: 15s;
   animation-timing-function: ease-out;
   animation-iteration-count: infinite;
 
@@ -373,11 +435,46 @@ body#page6 {
   0% {
     color: #383A44;
   }
+  25% {
+    color: #d4d4d4;
+  }
   50% {
+    letter-spacing: 5px;
+    color: #383A44;
+  }
+  75% {
     color: #d4d4d4;
   }
   100% {
     color: #383A44;
+  }
+}
+
+#page6 .blink {
+  animation-name: blink;
+  animation-duration: 6s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 80%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  85% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
   }
 }
 
@@ -411,7 +508,7 @@ body#page7 {
   font-weight: 400;
   font-style: italic;
   color: #383A44;
-  font-size: 4em;
+  font-size: 2em;
   line-height: 0.7;
 }
 
@@ -420,7 +517,7 @@ body#page7 {
   font-weight: 400;
   font-style: italic;
   color: #383A44;
-  font-size: 4em;
+  font-size: 2em;
   line-height: 0.7;
 }
 
@@ -430,6 +527,24 @@ body#page7 {
   animation-timing-function: ease-in-out;
   animation-delay: 2.5s;
   animation-iteration-count: infinite;
+}
+
+#page7 h2 {
+  animation-name: dark;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+#page7 h1:hover {
+  letter-spacing: 30px;
+  transition: 5s ease-out;
+}
+
+#page7 h2:hover {
+  letter-spacing: -10px;
+  transition: 5s;
 }
 
 @keyframes glow {
@@ -453,10 +568,34 @@ body#page7 {
   }
 }
 
+@keyframes dark {
+  0% {
+    color: #383A44;
+  }
+  10% {
+    color: #1a1a1a;
+  }
+  20% {
+    color: #383A44;
+  }
+  25% {
+    color: #1a1a1a;
+  }
+  40% {
+    color: #383A44;
+  }
+  50% {
+    color: #1a1a1a;
+  }
+}
+
 /* PAGE 8 */
 
 body#page8 {
   background: #24252D;
+  margin: 10%;
+  background: rgb(204,202,203,1);
+  background: linear-gradient(0deg, rgba(204,202,203,1) 0%, rgba(35,37,45,1) 100%);
   margin: 10%;
 }
 
@@ -466,12 +605,48 @@ body#page8 {
   line-height: 1.4;
 }
 
+#page8 p {
+  margin-bottom: 150vh;
+}
+
 #page8 h2 {
   font-family: mr-eaves-modern, sans-serif;
   font-weight: 400;
   font-style: italic;
   color: #383A44;
   font-size: 2em;
+}
+
+.p8p1 {
+  color: #879995;
+}
+
+.p8p2 {
+  color: #879995;
+}
+
+.p8p3 {
+  color: #9aada9;
+}
+
+.p8p4 {
+  color: #9aada9;
+}
+
+.p8p5 {
+  color: #667572;
+}
+
+@media only screen and (min-width: 770px) {
+
+  .p8p5:hover {
+    letter-spacing: 1px;
+  }
+}
+
+#page8 p:hover {
+  color: #23252D;
+  transition: 2s;
 }
 
 /* ALL PAGES */
@@ -502,7 +677,7 @@ body {
 @media only screen and (max-width: 900px) {
 
   .bodytext {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 
 

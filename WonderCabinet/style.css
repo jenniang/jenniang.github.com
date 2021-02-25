@@ -1,0 +1,54 @@
+body {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 10vh;
+  background-color: #cedecf;
+}
+
+h1 {
+  text-align: center;
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #6c756d;
+  font-size: 4rem;
+}
+
+img {
+  width: 32vw;
+  height: 50vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 75vh;
+}
+
+@media only screen and (max-width: 500px) {
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .container {
+    grid-template-columns: 100%;
+  }
+
+  img {
+    width: 70vw;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+}
+
+.box {
+  background-color: #cedecf;
+  padding: 1rem;
+  font-size: 3rem;
+  text-align: center;
+}

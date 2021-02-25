@@ -336,7 +336,6 @@ body#page5 {
 
 #page5 mark {
   background: none;
-  color: #818A89;
 }
 
 @media only screen and (min-width: 800px) {
@@ -351,6 +350,35 @@ body#page5 {
     transition: 2s;
   }
 
+}
+@media only screen and (max-width: 799px) {
+
+  #page5 mark {
+    color: black;
+    animation-name: darkcast;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+  }
+
+  @keyframes darkcast {
+    0% {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8a9190, 0 0 40px #8a9190, 0 0 50px #8a9190, 0 0 60px #8a9190, 0 0 70px #8a9190;
+    }
+    25% {
+      text-shadow: 0 0 20px #fff, 0 0 30px #b2b8b7, 0 0 40px #b2b8b7, 0 0 50px #b2b8b7, 0 0 60px #b2b8b7, 0 0 70px #b2b8b7, 0 0 80px #b2b8b7;
+    }
+    50% {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8a9190, 0 0 40px #8a9190, 0 0 50px #8a9190, 0 0 60px #8a9190, 0 0 70px #8a9190;
+    }
+    75% {
+      text-shadow: 0 0 20px #fff, 0 0 30px #b2b8b7, 0 0 40px #b2b8b7, 0 0 50px #b2b8b7, 0 0 60px #b2b8b7, 0 0 70px #b2b8b7, 0 0 80px #b2b8b7;
+    }
+    100% {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8a9190, 0 0 40px #8a9190, 0 0 50px #8a9190, 0 0 60px #8a9190, 0 0 70px #8a9190;
+    }
+  }
 }
 
 #page5 h1 {

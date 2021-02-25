@@ -283,7 +283,7 @@ body#page4 {
   color: #e6e9ed;
   transition: 2s;
   animation-name: lightray;
-  animation-duration: 8s;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-delay: 0;
@@ -291,7 +291,7 @@ body#page4 {
 
 @media only screen and (max-width: 900px) {
   #page4 mark {
-    animation: lightray 10s infinite;
+    animation: lightray 3s infinite;
     opacity: 80%;
   }
 }
@@ -356,7 +356,7 @@ body#page5 {
   #page5 mark {
     color: black;
     animation-name: darkcast;
-    animation-duration: 8s;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-delay: 0;

@@ -234,11 +234,6 @@ body#page4 {
 }
 
 
-.firefly:hover {
-  animation-play-state: running, paused;
-  cursor: grabbing;
-}
-
 .firefly:nth-child(1) {
   left: 40%;
   top: 5%;
@@ -345,41 +340,47 @@ body#page5 {
   }
 
   #page5 mark:hover {
-    text-transform: uppercase;
-    color: #e6e9ed;
+    color: #525252;
     transition: 2s;
+    animation-name: darkcast;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
   }
+
+
 
 }
 @media only screen and (max-width: 799px) {
 
   #page5 mark {
-    color: black;
+    color: #525252;
     animation-name: darkcast;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-delay: 0;
   }
+}
 
   @keyframes darkcast {
     0% {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8a9190, 0 0 40px #8a9190, 0 0 50px #8a9190, 0 0 60px #8a9190, 0 0 70px #8a9190;
+      text-shadow: 0 0 10px #1c1c1c, 0 0 20px #1c1c1c, 0 0 30px #525252, 0 0 40px #525252, 0 0 50px #525252, 0 0 60px #525252, 0 0 70px #525252;
     }
     25% {
-      text-shadow: 0 0 20px #fff, 0 0 30px #b2b8b7, 0 0 40px #b2b8b7, 0 0 50px #b2b8b7, 0 0 60px #b2b8b7, 0 0 70px #b2b8b7, 0 0 80px #b2b8b7;
+      text-shadow: 0 0 20px #1c1c1c, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px #000000, 0 0 70px #000000, 0 0 80px #000000;
     }
     50% {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8a9190, 0 0 40px #8a9190, 0 0 50px #8a9190, 0 0 60px #8a9190, 0 0 70px #8a9190;
+      text-shadow: 0 0 10px #1c1c1c, 0 0 20px #1c1c1c, 0 0 30px #525252, 0 0 40px #525252, 0 0 50px #525252, 0 0 60px #525252, 0 0 70px #525252;
     }
     75% {
-      text-shadow: 0 0 20px #fff, 0 0 30px #b2b8b7, 0 0 40px #b2b8b7, 0 0 50px #b2b8b7, 0 0 60px #b2b8b7, 0 0 70px #b2b8b7, 0 0 80px #b2b8b7;
+      text-shadow: 0 0 20px #1c1c1c, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px #000000, 0 0 70px #000000, 0 0 80px #000000;
     }
     100% {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8a9190, 0 0 40px #8a9190, 0 0 50px #8a9190, 0 0 60px #8a9190, 0 0 70px #8a9190;
+      text-shadow: 0 0 10px #1c1c1c, 0 0 20px #1c1c1c, 0 0 30px #525252, 0 0 40px #525252, 0 0 50px #525252, 0 0 60px #525252, 0 0 70px #525252;
     }
   }
-}
 
 #page5 h1 {
   font-family: mr-eaves-modern, sans-serif;
@@ -673,7 +674,7 @@ body#page8 {
 }
 
 #page8 p:hover {
-  color: #23252D;
+  color: #16161a;
   transition: 2s;
 }
 
@@ -724,9 +725,32 @@ a:visited {
 a:hover {
   color: #383A44;
   text-decoration: none;
+  transition: 2s;
+  animation-name: button;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 a:active {
   color: #D9D3D3;
   text-decoration: none;
+}
+
+@keyframes button {
+  0% {
+    color: #D9D3D3;
+  }
+  25% {
+    color: #383A44;
+  }
+  50% {
+    color: #D9D3D3;
+  }
+  75% {
+    color: #383A44;
+  }
+  100% {
+    color: #D9D3D3;
+  }
 }

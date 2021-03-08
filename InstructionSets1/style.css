@@ -1,0 +1,182 @@
+body {
+  background-color: #1f1f1f;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 10rem 10rem 10rem;
+  height: 10rem;
+  column-gap: 5%;
+  justify-content: center;
+  margin-top: 40vh;
+}
+
+.box1 {
+  animation-name: box1;
+  animation-duration: 40s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.box2 {
+  animation-name: box2;
+  animation-duration: 40s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.box3 {
+  animation-name: box3;
+  animation-duration: 40s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes box1 {
+  0% {
+    background-color: #a3cca5;
+  }
+  10% {
+    background-color: #3a486b;
+  }
+  20% {
+    background-color: #7d9c76;
+  }
+  30%; {
+    background-color: #d9c1a9;
+  }
+  40% {
+    background-color: #546dab;
+  }
+  50% {
+    background-color: #a3cbcc;
+  }
+  60% {
+    background-color: #95a6cf;
+  }
+  70% {
+    background-color: #c1c4db;
+  }
+  80% {
+    background-color: #4f6350;
+  }
+  90% {
+    background-color: #b2d1c9;
+  }
+  100% {
+    background-color: #a3cca5;
+  }
+}
+
+@keyframes box2 {
+  0% {
+    background-color: #f5b25b;
+  }
+  10% {
+    background-color: #6fc9c3;
+  }
+  20% {
+    background-color: #f04f75;
+  }
+  30%; {
+    background-color: #695ae8;
+  }
+  40% {
+    background-color: #e87b5a;
+  }
+  50% {
+    background-color: #e8d55a;
+  }
+  60% {
+    background-color: #f28dde;
+  }
+  70% {
+    background-color: #958df2;
+  }
+  80% {
+    background-color: #c8f28d;
+  }
+  90% {
+    background-color: #de59a0;
+  }
+  100% {
+    background-color: #f5b25b;
+  }
+}
+
+@keyframes box3 {
+  0% {
+    background-color: #708fa1;
+  }
+  10% {
+    background-color: #2e434f;
+  }
+  20% {
+    background-color: #87a892;
+  }
+  30%; {
+    background-color: #656580;
+  }
+  40% {
+    background-color: #9fc4c1;
+  }
+  50% {
+    background-color: #e8c682;
+  }
+  60% {
+    background-color: #5f6982;
+  }
+  70% {
+    background-color: #faa893;
+  }
+  80% {
+    background-color: #1f1f1f;
+  }
+  90% {
+    background-color: #2b3f4f;
+  }
+  100% {
+    background-color: #708fa1;
+  }
+}
+
+
+p {
+  text-align: center;
+  align-items: center;
+  font-family: mrs-eaves, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  margin-top: 40%;
+}
+
+.text {
+  display: none;
+}
+
+.box:hover > .text {
+  display: block;
+}
+
+.box:hover {
+  cursor: grabbing;
+  animation-play-state: paused;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .container {
+    grid-template-columns: 10rem;
+    height: 38rem;
+    max-height: 38rem;
+    row-gap: 10%;
+    margin-top: 12rem;
+  }
+
+  .text {
+    display: block;
+  }
+
+}

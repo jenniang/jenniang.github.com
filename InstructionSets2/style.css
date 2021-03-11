@@ -1,0 +1,82 @@
+body {
+  background-color: #74abed;
+}
+
+.suncontainer {
+  display: grid;
+  grid-template-columns: 15rem;
+  height: 15rem;
+  justify-content: center;
+  margin-top: 8vh;
+}
+
+.sun {
+  height: 15rem;
+  width: 15rem;
+  background-color: #ffa74a;
+  border-radius: 100%;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #ffbb9c, 0 0 20px #ffbb9c, 0 0 30px #fcb972, 0 0 40px #fcb972, 0 0 50px #fcb972, 0 0 60px #fcb972, 0 0 70px #fcb972, 0 0 80px #fcb972;
+  }
+
+  to {
+    box-shadow: 0 0 20px #ffbb9c, 0 0 30px #ff8a54, 0 0 40px #ff8a54, 0 0 50px #ff8a54, 0 0 60px #ff8a54, 0 0 70px #ff8a54, 0 0 80px #ff8a54, 0 0 90px #ff8a54, 0 0 100px #ff8a54;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 6.5rem 6.5rem 6.5rem 6.5rem;
+  grid-template-rows: 6.5rem 6.5rem 6.5rem;
+  height: 6.5rem;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  justify-content: center;
+  margin-top: 12vh;
+}
+
+.icecube {
+  background-color: #bae5f7;
+  border-radius: 10%;
+  animation-name: melt;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes melt {
+  0% {
+    border-radius: 10%;
+  }
+
+  100% {
+    opacity: 5%;
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .suncontainer {
+    display: grid;
+    grid-template-columns: 10rem;
+    height: 10rem;
+    justify-content: center;
+    margin-top: 10vh;
+  }
+
+  .sun {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .container {
+    grid-template-columns: 3rem 3rem 3rem 3rem;
+    grid-template-rows: 3rem 3rem 3rem;
+  }
+
+}

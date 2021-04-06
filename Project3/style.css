@@ -1,5 +1,5 @@
 body {
-  background-color: #141414;
+  background-color: black;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 400;
 }
@@ -36,7 +36,7 @@ svg {
 
 .webtitle {
   color: white;
-  background-color: #141414;
+  background-color: black;
   margin-top: 0;
   overflow: hidden;
   position: fixed;
@@ -90,7 +90,7 @@ p {
   cursor: pointer;
 }
 
-/* 
+/*
 .large-text {
   font-family: 'Noto Sans';
   font-style: normal;

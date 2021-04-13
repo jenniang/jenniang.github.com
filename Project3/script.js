@@ -106,7 +106,6 @@ function showCoins() {
 
       // get country field from airtable
       // loop through the array and add each country as a class to the coin container
-      // THIS DOESN'T WORK ?????
 
       var coinCountry = coin.fields.country;
       coinCountry.forEach(function(country) {
@@ -114,8 +113,6 @@ function showCoins() {
         coinContainer.dataset.country = country
       })
   });
-
-
 
 
   function filter(country){
@@ -133,7 +130,14 @@ function showCoins() {
   }
 
 
- // allCoins.addEventListener("click", function(){
+  //toggling the maps
+  //
+  // let toggleMap = document.querySelector('.maplinks')
+  // toggleMap.addEventListener('click', ?????);
+  //
+
+
+
 
 
 }

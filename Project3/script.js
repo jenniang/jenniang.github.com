@@ -129,6 +129,64 @@ function showCoins() {
 
   }
 
+  document.getElementById("asiabutton").addEventListener("click", function() {
+
+    document.getElementsByClassName('asia')[0].style.display = "grid";
+    document.getElementsByClassName('europe')[0].style.display = "none";
+    document.getElementsByClassName('northamerica')[0].style.display = "none";
+    document.getElementsByClassName('showall')[0].style.display = "none";
+
+  });
+
+  document.getElementById("europebutton").addEventListener("click", function() {
+
+    document.getElementsByClassName('asia')[0].style.display = "none";
+    document.getElementsByClassName('europe')[0].style.display = "block";
+    document.getElementsByClassName('northamerica')[0].style.display = "none";
+    document.getElementsByClassName('showall')[0].style.display = "none";
+
+  });
+
+  document.getElementById("northamericabutton").addEventListener("click", function() {
+
+    document.getElementsByClassName('asia')[0].style.display = "none";
+    document.getElementsByClassName('europe')[0].style.display = "none";
+    document.getElementsByClassName('northamerica')[0].style.display = "block";
+    document.getElementsByClassName('showall')[0].style.display = "none";
+
+  });
+
+  document.getElementById("showallbutton").addEventListener("click", function() {
+
+    document.getElementsByClassName('asia')[0].style.display = "none";
+    document.getElementsByClassName('europe')[0].style.display = "none";
+    document.getElementsByClassName('northamerica')[0].style.display = "none";
+    document.getElementsByClassName('showall')[0].style.display = "block";
+
+  });
+
+
+
+  // function asiaClick() {
+  //
+  //   document.getElementsByClassName('.asia').style.display = "block"
+  //   document.getElementsByClassName('.europe').style.display = "none"
+  //   document.getElementsByClassName('.northamerica').style.display = "none"
+  //   document.getElementsByClassName('.showall').style.display = "none"
+  //
+  // }
+
+
+
+  // function toggleMap() {
+  //   document.querySelector()
+  //     if () {
+  //       .style.display = 'block'
+  //     } else {
+  //       .style.display = 'none'
+  //     }
+  // }
+
 
   //toggling the maps
   //

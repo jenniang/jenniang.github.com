@@ -171,8 +171,6 @@ h1 {
 .value { grid-area: value; }
 .value_usd { grid-area: value_usd; }
 
-
-
 .country:hover {
   cursor: pointer;
 }

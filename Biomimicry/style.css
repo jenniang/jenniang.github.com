@@ -30,7 +30,7 @@ body {
     100%{background-position:0% 50%}
 }
 
-.text {
+#text {
   font-family: orator-std, monospace;
   font-weight: 400;
   font-style: normal;
@@ -78,7 +78,7 @@ body {
 
 
 @media only screen and (max-width: 850px) {
-  .text {
+  #text {
     margin-top: 3rem;
     font-size: 0.8rem;
   }

@@ -136,6 +136,11 @@ function showCoins() {
     document.getElementsByClassName('northamerica')[0].style.display = "none";
     document.getElementsByClassName('showall')[0].style.display = "none";
 
+    document.getElementById('showallbutton').style.textDecoration = "none";
+    document.getElementById('asiabutton').style.textDecoration = "underline";
+    document.getElementById('europebutton').style.textDecoration = "none";
+    document.getElementById('northamericabutton').style.textDecoration = "none";
+
   });
 
   document.getElementById("europebutton").addEventListener("click", function() {
@@ -144,6 +149,11 @@ function showCoins() {
     document.getElementsByClassName('europe')[0].style.display = "block";
     document.getElementsByClassName('northamerica')[0].style.display = "none";
     document.getElementsByClassName('showall')[0].style.display = "none";
+
+    document.getElementById('showallbutton').style.textDecoration = "none";
+    document.getElementById('asiabutton').style.textDecoration = "none";
+    document.getElementById('europebutton').style.textDecoration = "underline";
+    document.getElementById('northamericabutton').style.textDecoration = "none";
 
   });
 
@@ -154,6 +164,11 @@ function showCoins() {
     document.getElementsByClassName('northamerica')[0].style.display = "block";
     document.getElementsByClassName('showall')[0].style.display = "none";
 
+    document.getElementById('showallbutton').style.textDecoration = "none";
+    document.getElementById('asiabutton').style.textDecoration = "none";
+    document.getElementById('europebutton').style.textDecoration = "none";
+    document.getElementById('northamericabutton').style.textDecoration = "underline";
+
   });
 
   document.getElementById("showallbutton").addEventListener("click", function() {
@@ -163,36 +178,13 @@ function showCoins() {
     document.getElementsByClassName('northamerica')[0].style.display = "none";
     document.getElementsByClassName('showall')[0].style.display = "block";
 
+    document.getElementById('showallbutton').style.textDecoration = "underline";
+    document.getElementById('asiabutton').style.textDecoration = "none";
+    document.getElementById('europebutton').style.textDecoration = "none";
+    document.getElementById('northamericabutton').style.textDecoration = "none";
+
   });
 
-
-
-  // function asiaClick() {
-  //
-  //   document.getElementsByClassName('.asia').style.display = "block"
-  //   document.getElementsByClassName('.europe').style.display = "none"
-  //   document.getElementsByClassName('.northamerica').style.display = "none"
-  //   document.getElementsByClassName('.showall').style.display = "none"
-  //
-  // }
-
-
-
-  // function toggleMap() {
-  //   document.querySelector()
-  //     if () {
-  //       .style.display = 'block'
-  //     } else {
-  //       .style.display = 'none'
-  //     }
-  // }
-
-
-  //toggling the maps
-  //
-  // let toggleMap = document.querySelector('.maplinks')
-  // toggleMap.addEventListener('click', ?????);
-  //
 
 
 

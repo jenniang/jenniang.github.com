@@ -12,7 +12,7 @@ html {
 
 .asia {
   margin-top: -5rem;
-  margin-left: -7rem;
+  margin-left: -4rem;
   width: 95vw;
   height: 50rem;
   justify-content: center;
@@ -328,10 +328,14 @@ h1 {
 
   .asia {
     margin-top: 0;
-    margin-left: -7rem;
+    margin-left: -3rem;
     width: 100vw;
     height: 50vh;
     justify-content: center;
+  }
+
+  .showall {
+    margin-top: 3rem;
   }
 
   .maplinks {

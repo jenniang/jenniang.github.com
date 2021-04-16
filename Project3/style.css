@@ -39,12 +39,12 @@ html {
 }
 
 .europetext {
-  margin-top: -5rem;
+  margin-top: -10rem;
   display: none;
 }
 
 .northamericatext {
-  margin-top: -5rem;
+  margin-top: -10rem;
   display: none;
 }
 
@@ -130,7 +130,7 @@ html {
   position: fixed;
   top: 0;
   width: 100vw;
-  padding: 20px;
+  padding: 16px;
   border-bottom: 1px solid white;
 }
 

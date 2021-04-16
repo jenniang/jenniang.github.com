@@ -136,6 +136,10 @@ function showCoins() {
     document.getElementsByClassName('northamerica')[0].style.display = "none";
     document.getElementsByClassName('showall')[0].style.display = "none";
 
+    document.getElementsByClassName('asiatext')[0].style.display = "block";
+    document.getElementsByClassName('europetext')[0].style.display = "none";
+    document.getElementsByClassName('northamericatext')[0].style.display = "none";
+
     document.getElementById('showallbutton').style.textDecoration = "none";
     document.getElementById('asiabutton').style.textDecoration = "underline";
     document.getElementById('europebutton').style.textDecoration = "none";
@@ -149,6 +153,10 @@ function showCoins() {
     document.getElementsByClassName('europe')[0].style.display = "block";
     document.getElementsByClassName('northamerica')[0].style.display = "none";
     document.getElementsByClassName('showall')[0].style.display = "none";
+
+    document.getElementsByClassName('asiatext')[0].style.display = "none";
+    document.getElementsByClassName('europetext')[0].style.display = "block";
+    document.getElementsByClassName('northamericatext')[0].style.display = "none";
 
     document.getElementById('showallbutton').style.textDecoration = "none";
     document.getElementById('asiabutton').style.textDecoration = "none";
@@ -164,6 +172,10 @@ function showCoins() {
     document.getElementsByClassName('northamerica')[0].style.display = "block";
     document.getElementsByClassName('showall')[0].style.display = "none";
 
+    document.getElementsByClassName('asiatext')[0].style.display = "none";
+    document.getElementsByClassName('europetext')[0].style.display = "none";
+    document.getElementsByClassName('northamericatext')[0].style.display = "block";
+
     document.getElementById('showallbutton').style.textDecoration = "none";
     document.getElementById('asiabutton').style.textDecoration = "none";
     document.getElementById('europebutton').style.textDecoration = "none";
@@ -178,6 +190,10 @@ function showCoins() {
     document.getElementsByClassName('northamerica')[0].style.display = "none";
     document.getElementsByClassName('showall')[0].style.display = "block";
 
+    document.getElementsByClassName('asiatext')[0].style.display = "none";
+    document.getElementsByClassName('europetext')[0].style.display = "none";
+    document.getElementsByClassName('northamericatext')[0].style.display = "none";
+
     document.getElementById('showallbutton').style.textDecoration = "underline";
     document.getElementById('asiabutton').style.textDecoration = "none";
     document.getElementById('europebutton').style.textDecoration = "none";
@@ -185,9 +201,124 @@ function showCoins() {
 
   });
 
+  document.querySelector("#showallbutton").addEventListener("click", function() {
+
+    let allCoins = document.querySelectorAll('.coin-container')
+    allCoins.forEach((item, i) => {
+        item.style.display = 'grid'
+
+    });
+  })
 
 
 
 
+  document.getElementById("THAI").addEventListener("click", function() {
+    document.getElementsByClassName("THAI")[0].style.color = ("#FF4545")
+    document.getElementsByClassName("MAS")[0].style.color = ("white")
+    document.getElementsByClassName("IDN")[0].style.color = ("white")
+    document.getElementsByClassName("CHI")[0].style.color = ("white")
+    document.getElementsByClassName("HK")[0].style.color = ("white")
+    document.getElementsByClassName("KR")[0].style.color = ("white")
+    document.getElementsByClassName("SG")[0].style.color = ("white")
 
+    });
+
+  document.getElementById("MAS").addEventListener("click", function() {
+    document.getElementsByClassName("THAI")[0].style.color = ("white")
+    document.getElementsByClassName("MAS")[0].style.color = ("#FF4545")
+    document.getElementsByClassName("IDN")[0].style.color = ("white")
+    document.getElementsByClassName("CHI")[0].style.color = ("white")
+    document.getElementsByClassName("HK")[0].style.color = ("white")
+    document.getElementsByClassName("KR")[0].style.color = ("white")
+    document.getElementsByClassName("SG")[0].style.color = ("white")
+
+    });
+
+  document.getElementById("IDN").addEventListener("click", function() {
+    document.getElementsByClassName("THAI")[0].style.color = ("white")
+    document.getElementsByClassName("MAS")[0].style.color = ("white")
+    document.getElementsByClassName("IDN")[0].style.color = ("#FF4545")
+    document.getElementsByClassName("CHI")[0].style.color = ("white")
+    document.getElementsByClassName("HK")[0].style.color = ("white")
+    document.getElementsByClassName("KR")[0].style.color = ("white")
+    document.getElementsByClassName("SG")[0].style.color = ("white")
+
+    });
+
+  document.getElementById("CHI").addEventListener("click", function() {
+    document.getElementsByClassName("THAI")[0].style.color = ("white")
+    document.getElementsByClassName("MAS")[0].style.color = ("white")
+    document.getElementsByClassName("IDN")[0].style.color = ("white")
+    document.getElementsByClassName("CHI")[0].style.color = ("#FF4545")
+    document.getElementsByClassName("HK")[0].style.color = ("white")
+    document.getElementsByClassName("KR")[0].style.color = ("white")
+    document.getElementsByClassName("SG")[0].style.color = ("white")
+
+
+    });
+
+  document.getElementById("HK").addEventListener("click", function() {
+    document.getElementsByClassName("THAI")[0].style.color = ("white")
+    document.getElementsByClassName("MAS")[0].style.color = ("white")
+    document.getElementsByClassName("IDN")[0].style.color = ("white")
+    document.getElementsByClassName("CHI")[0].style.color = ("white")
+    document.getElementsByClassName("HK")[0].style.color = ("#FF4545")
+    document.getElementsByClassName("KR")[0].style.color = ("white")
+    document.getElementsByClassName("SG")[0].style.color = ("white")
+
+    });
+
+  document.getElementById("KR").addEventListener("click", function() {
+    document.getElementsByClassName("THAI")[0].style.color = ("white")
+    document.getElementsByClassName("MAS")[0].style.color = ("white")
+    document.getElementsByClassName("IDN")[0].style.color = ("white")
+    document.getElementsByClassName("CHI")[0].style.color = ("white")
+    document.getElementsByClassName("HK")[0].style.color = ("white")
+    document.getElementsByClassName("KR")[0].style.color = ("#FF4545")
+    document.getElementsByClassName("SG")[0].style.color = ("white")
+
+    });
+
+  document.getElementById("SG").addEventListener("click", function() {
+    document.getElementsByClassName("THAI")[0].style.color = ("white")
+    document.getElementsByClassName("MAS")[0].style.color = ("white")
+    document.getElementsByClassName("IDN")[0].style.color = ("white")
+    document.getElementsByClassName("CHI")[0].style.color = ("white")
+    document.getElementsByClassName("HK")[0].style.color = ("white")
+    document.getElementsByClassName("KR")[0].style.color = ("white")
+    document.getElementsByClassName("SG")[0].style.color = ("#FF4545")
+
+    });
+
+  document.getElementById("FR").addEventListener("click", function() {
+    document.getElementsByClassName("CZ")[0].style.color = ("white")
+    document.getElementsByClassName("FR")[0].style.color = ("#FF4545")
+
+    });
+
+  document.getElementById("CZ").addEventListener("click", function() {
+    document.getElementsByClassName("FR")[0].style.color = ("white")
+    document.getElementsByClassName("CZ")[0].style.color = ("#FF4545")
+
+    });
+
+  document.getElementById("USA").addEventListener("click", function() {
+    document.getElementsByClassName("USA")[0].style.color = ("#FF4545")
+
+    });
+
+  document.getElementById("maplinks").addEventListener("click", function() {
+    document.getElementsByClassName("THAI")[0].style.color = ("white")
+    document.getElementsByClassName("MAS")[0].style.color = ("white")
+    document.getElementsByClassName("IDN")[0].style.color = ("white")
+    document.getElementsByClassName("CHI")[0].style.color = ("white")
+    document.getElementsByClassName("HK")[0].style.color = ("white")
+    document.getElementsByClassName("KR")[0].style.color = ("white")
+    document.getElementsByClassName("SG")[0].style.color = ("white")
+    document.getElementsByClassName("FR")[0].style.color = ("white")
+    document.getElementsByClassName("CZ")[0].style.color = ("white")
+    document.getElementsByClassName("USA")[0].style.color = ("white")
+
+    });
 }

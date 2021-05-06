@@ -1,6 +1,6 @@
 console.log('hi!')
 
-
+new fairyDustCursor();
 
 let x = document.getElementById('colors');
 let colorAll = x.children;

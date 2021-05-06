@@ -97,6 +97,7 @@ img {
   width: 30px;
 }
 
+
 img:hover {
   animation: hoverEffect;
   animation-duration: 2s;

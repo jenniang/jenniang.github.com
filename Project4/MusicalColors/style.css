@@ -109,17 +109,20 @@ img {
   width: 30px;
 }
 
-img:hover {
+.icon:hover {
   animation: hoverEffect;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
+
 @keyframes hoverEffect {
 
   0% { filter: blur(0); }
 
-  50% { filter: blur(1px) invert(1); }
+  50% {
+  filter: blur(1px) invert(1);
+}
 
   100% { filter: blur(0); }
 
